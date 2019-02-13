@@ -42,4 +42,35 @@ restaurants_attributes = [
   }
 ]
 Restaurant.create!(restaurants_attributes)
+
+restaurants_reviews = [
+  {
+    content: "looooooove this restaurant!",
+    rating: 4,
+    restaurant: Restaurant.where(name: 'Petit Seoul')
+  },
+  {
+    content: "haaaaate this restaurant!",
+    rating: 0,
+    restaurant: Restaurant.where(name: 'Dishoom')
+
+  },
+  {
+    content: "don't go there, food is discusting",
+    rating: 0,
+    restaurant: Restaurant.where(name: 'Pizza East')
+
+  },
+  {
+    content: "nothing much there",
+    rating: 3,
+    restaurant: Restaurant.where(name: 'Claudette')
+
+  },
+  {
+    content: "my favorite one!",
+    rating: 5,
+    restaurant: Restaurant.where(name: 'Dishoom')
+  }
+  ]
 puts 'Finished!'
